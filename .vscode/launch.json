@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "NAME_OF_REMOTE_ATTACHMENT",
+            "type": "debugpy",
+            "request": "attach",
+            "connect": {
+                "host": "WRITE_IP_HERE",
+                "port": 49869 // REMOVE COMMENTS! NUMERICAL PORT NUM ONLY, E.G. 49869
+            },
+            "pathMappings": [
+                {
+                    "localRoot": "${workspaceFolder}",
+                    "remoteRoot": "/workcenter" // REMOVE COMMENTS! PATH TO YOUR PROJECT SAME WITH DOCKERFILE
+                }
+            ]
+        }
+    ]
+}
